@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <style>
+      form {
+        display: block;
+        margin-top: 15%;
+        border: solid rgba(107, 107, 107, 0.432) 1px;
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: rgba(255, 255, 255, 0.24) 0 3px 8px;
+        background-color: #245282;
+      }
+      form > label {
+        margin-top: 25px;
+        display: block;
+        margin-left: 10;
+      }
+      form > input {
+        margin-top: 10px;
+        background-color: #99738e;
+        border-radius: 5px;
+        border: 0px;
+      }
+      #Submit-btn {
+        background-color: #f64c72;
+        border: 0px;
+        margin-top: 25px;
+        height: 25px;
+        width: 75px;
+        border-radius: 10px;
+        box-shadow: #EEEEEE;
+      }
+      body {
+        background-color: #2f2fa2;
+      }
+    </style>
+  </head>
+  <body>
+    <center>
+      <form
+        action="/login"
+        enctype="application/x-www-form-urlencoded"
+        method="post">
+        <label for="Domainname">Domain Name</label>
+        <input
+          type="text"
+          id="Domainname"
+          name="Domainname">
+        <label for="Username">Username</label>
+        <input
+          type="text"
+          id="Username"
+          name="Username">
+        <label for="Password">Password</label>
+        <input
+          type="password"
+          id="Password"
+          name="Password">
+        <br>
+        <input
+          type="submit"
+          value="login"
+          id="Submit-btn">
+      </form>
+      <p>{{ Error }}</p>
+    </center>
+  </body>
+</html>
