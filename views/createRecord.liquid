@@ -31,7 +31,7 @@
       #Submit-btn {
         background-color: #f64c72;
         border: 0px;
-        margin-top: 25px;
+        margin-top: 15px;
         height: 30px;
         width: 75px;
         border-radius: 10px;
@@ -48,26 +48,26 @@
         action="/createRecord" 
         enctype="application/x-www-form-urlencoded" 
         method="post">
-        <label for="FirstName">First Name</label>
+        <label for="firstName">First Name</label>
         <input
           type="text"
-          id="FirstName"
-          name="FirstName"><br>
-        <label for="LastName">Last Name</label>
+          id="firstName"
+          name="firstName"><br>
+        <label for="lastName">Last Name</label>
         <input
           type="text"
-          id="LastName"
-          name="LastName"><br>
-        <label for="Email">Email</label>
+          id="lastName"
+          name="lastName"><br>
+        <label for="email">Email</label>
         <input
           type="text"
-          id="Email"
-          name="Email"><br>
-        <label for="Phone">Phone</label>
+          id="email"
+          name="email"><br>
+        <label for="phone">Phone</label>
         <input
-          type="text"
-          id="Phone"
-          name="Phone"><br>
+          type="tel"
+          id="phone"
+          name="phone"><br>
         <label for="x"></label>
         <input
           id = "Submit-btn" 
@@ -79,7 +79,7 @@
           onclick="location.href='/Home'"
           id="Submit-btn">
         <h5>
-          {{error}}
+          {{ error }}
         </h5><br>
       </form>
     </center>

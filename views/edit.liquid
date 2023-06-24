@@ -31,7 +31,7 @@
       #submit-btn {
         background-color: #f64c72;
         border: 0;
-        margin-top: 25px;
+        margin-top: 15px;
         height: 30px;
         width: 75px;
         border-radius: 10px;
@@ -48,29 +48,29 @@
         action="/edit"
         enctype="application/x-www-form-urlencoded"
         method="post">
-        <label for="FirstName">First Name</label>
+        <label for="firstName">First Name</label>
         <input
           type="text"
-          id="FirstName"
-          name="FirstName"
+          id="firstName"
+          name="firstName"
           value="{{ firstName }}"><br>
-        <label for="LastName">Last Name</label>
+        <label for="lastName">Last Name</label>
         <input
           type="text"
-          id="LastName"
-          name="LastName"
+          id="lastName"
+          name="lastName"
           value="{{ lastName }}"><br>
-        <label for="Email">Email</label>
+        <label for="email">Email</label>
         <input
           type="email"
-          id="Email"
-          name="Email"
+          id="email"
+          name="email"
           value="{{ email }}"><br>
-        <label for="Phone">Phone</label>
+        <label for="phone">Phone</label>
         <input
-          type="number"
-          id="Phone"
-          name="Phone"
+          type="tel"
+          id="phone"
+          name="phone"
           value="{{ phone }}"><br>
         <label for="x"></label>
         <input
@@ -80,8 +80,9 @@
         <input
           type="button"
           value="Cancel"
-          onclick="location.href='/Home'"
+          onclick="location.href='/home'"
           id="submit-btn">
+        <h5>{{ error }}</h5>
       </form>
     </center>
   </body>

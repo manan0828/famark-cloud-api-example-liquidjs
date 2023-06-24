@@ -75,6 +75,9 @@
         border: 0px;
         background-color: #99738e;
       }
+      ::-webkit-input-placeholder{
+        color: #21216e
+      }
       .search-button {
         padding: 8px 16px;
         background-color: #f64c72;
@@ -88,11 +91,15 @@
   <center>
     <div class = "search-container">
       <input 
-      type = "text"
-      class = "search-input"
-      placeholder="Search by name, email or phone number..."
-      id = "search-input" />
-      <button type= "submit" class = "search-button" onclick="searchContacts()">Search</button>
+        type = "text"
+        class = "search-input"
+        placeholder="Search by name, email or phone number..."
+        id = "search-input"
+        onkeypress="if(event.keyCode===13) searchContacts()"/>
+      <button 
+        type= "submit" 
+        class = "search-button" 
+        onclick="searchContacts()">Search</button>
     </div>
     <table
       id = "contact-table"
